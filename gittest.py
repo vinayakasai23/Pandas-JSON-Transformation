@@ -40,6 +40,7 @@ json = [
         ]
     },
 ]
+#The record_path value will create it's own dataframe first then we can specify other columns in meta from other values
 d = pd.json_normalize(json, record_path='students',
                       meta=['class', 'student count', ['info', 'teachers', 'math'], ['info', 'teachers', 'physics']])
 with pd.option_context('display.max_columns', None):
