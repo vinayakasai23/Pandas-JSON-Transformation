@@ -1,5 +1,5 @@
 import pandas as pd
-#Nested JSON
+#Nested JSON with list of dictionaries
 json = [
     {
         'class': 'Year 1',
